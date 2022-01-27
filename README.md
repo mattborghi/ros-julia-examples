@@ -6,6 +6,12 @@
 
 Go to `cd ~/catkin_ws/src` and clone the repository `git clone https://github.com/mattborghi/ros-julia-examples.git` or `gh repo clone mattborghi/ros-julia-examples`. Then run `cd ~/catkin_ws/` and `catkin_make`.
 
+Also install the julia package dependencies by doing
+```
+cd ~/catkin_ws/src/julia_tutorials/
+julia --project="." -e "import Pkg; Pkg.instantiate()"
+```
+
 Before running an example make sure a `roscore` instance is running.
 
 For some reason it doens't work by running
